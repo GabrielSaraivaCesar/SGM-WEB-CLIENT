@@ -1,0 +1,35 @@
+
+:root {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* VARIABLES */
+    --primary-blue-1: #3751FF;
+    --primary-blue-2: #2437BB;
+    --primary-blue-3: #667AFF;
+
+    --ui-grey-1: #080C28;
+    --ui-grey-2: #303841;
+    --ui-grey-3: #383A4B;
+    --ui-grey-4: #7F8397;
+    --ui-grey-5: #C7C7D9;
+    --ui-grey-6: #DCDCEF;
+    --ui-grey-7: #F7F8FC;
+
+    --ui-white: #FFFFFF;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    background-color: var(--ui-grey-7);
+    width: 100%;
+    min-height: 100vh;
+}
