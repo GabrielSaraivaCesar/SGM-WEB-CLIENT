@@ -10,15 +10,152 @@
     <script src="/src/components/charts/line-chart-component.js" defer></script>
     <script src="/src/components/navigation/navigation-component.js" defer></script>
     <script src="/src/components/header/header-component.js" defer></script>
-    <script src="/src/scripts/home.js" defer></script>
+    <script src="/src/scripts/produtos.js" defer></script>
 
     <link rel="stylesheet" href="/src/style/main.css">
+    <link rel="stylesheet" href="/src/style/produtos.css">
 </head>
 <body style="display: flex; justify-content: center; align-items:center; height: 100vh; padding: 0; margin: 0">
     <navigation-component></navigation-component>
     <main>
         <header-component title="Produtos"></header-component>
-        
+
+        <div class="row" style="justify-content: flex-end;">
+            <button style="width: 240px; display: none;" class="danger" id="remover-btn">
+                Remover Selecionados
+            </button>
+            <div style="width: 32px"></div>
+            <button style="width: 200px" id="add-btn">
+                <div class="add-prod-btn">
+                    Adicionar
+                    <div style="width: 1px; height: 100%; background: white; height: 24px; margin: 0 12px 0 28px"></div>
+                    <img src="/public/svg/plus.svg" alt="Add">
+                </div>
+            </button>
+        </div>
+
+        <div class="row">
+            <div class="card " >
+                <h2>Produtos</h2>
+                <div style="height: 300px; overflow-y: auto; margin: 0 -30px"> 
+                    <table id="produtos-table">
+                        <thead>
+                            <th><input type="checkbox"></th>
+                            <th>Item</th>
+                            <th>Tipo</th>
+                            <th>Preço</th>
+                            <th>Descrição</th>
+                        </thead>
+                        <tbody>
+                            <tr data-prod-id="1">
+                                <td><input type="checkbox"></td>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr data-prod-id="1">
+                                <td><input type="checkbox"></td>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr data-prod-id="1">
+                                <td><input type="checkbox"></td>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr data-prod-id="1">
+                                <td><input type="checkbox"></td>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr data-prod-id="1">
+                                <td><input type="checkbox"></td>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div> 
+        </div>
+        <div class="row">
+            <div class="card ">
+                <h2>Lotes</h2>
+                <div style="height: 300px; overflow-y: auto; margin: 0 -30px"> 
+                    <table id="lotes-table">
+                        <thead>
+                            <th><input type="checkbox"></th>
+                            <th>ID</th>
+                            <th>Data de entrada</th>
+                            <th>Qnt. Produtos</th>
+                            <th>Produtos</th>
+                        </thead>
+                        <tbody>
+                            <tr data-prod-id="1">
+                                <td><input type="checkbox"></td>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr data-prod-id="1">
+                                <td><input type="checkbox"></td>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr data-prod-id="1">
+                                <td><input type="checkbox"></td>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr data-prod-id="1">
+                                <td><input type="checkbox"></td>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr data-prod-id="1">
+                                <td><input type="checkbox"></td>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr data-prod-id="1">
+                                <td><input type="checkbox"></td>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr data-prod-id="1">
+                                <td><input type="checkbox"></td>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div> 
+        </div>
     </main>
 </body>
 </html>

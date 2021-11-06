@@ -95,17 +95,62 @@ td, th {
     color: var(--ui-grey-3);
 }
 
+
+input[type=checkbox] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
 button {
     width: 100%;
     height: 48px;
     border-radius: 8px;
     background-color: var(--primary-blue-1);
+    box-shadow:  0px 4px 12px rgba(55, 81, 255, 0.24);
     border: none;
     color: var(--ui-white);
     font-size: 14px;
     transition: 0.3s;
     cursor: pointer;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.danger {
+    background-color: rgb(227 71 71);
+    box-shadow:  0px 4px 12px rgba(227 71 71, 0.24)
+}
+button.danger:hover {
+    background-color: rgb(185, 79, 79);
 }
 button:hover {
     background-color: var(--primary-blue-2);
 }
+
+.card {
+    border: 1px solid #DFE0EB;
+    padding: 32px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--ui-white);
+}
+
+.card h2 {
+    color: var(--ui-grey-3);
+        
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    margin-bottom: 24px;
+}
+
+.w-25 {
+    max-width: calc(25% - 15px);
+}
+.w-50 {
+    max-width: calc(50% - 15px);
+}
+
