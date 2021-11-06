@@ -12,11 +12,177 @@
     <script src="/src/scripts/home.js" defer></script>
 
     <link rel="stylesheet" href="/src/style/main.css">
+    <link rel="stylesheet" href="/src/style/dashboard.css">
 </head>
 <body style="display: flex; justify-content: center; align-items:center; height: 100vh; padding: 0; margin: 0">
     <navigation-component></navigation-component>
     <main>
-        
+        <div class="row">
+            <div class="dashboard-section w-25">
+                <div class="top-tip">
+                    <h2>Itens em estoque</h2>
+                    <span>2500</span>
+                </div>
+            </div>
+            <div class="dashboard-section w-25">
+                <div class="top-tip">
+                    <h2>Vendas no mês</h2>
+                    <span>48</span>
+                </div>
+            </div>
+            <div class="dashboard-section w-25">
+                <div class="top-tip">
+                    <h2>Vendas na semana</h2>
+                    <span>18</span>
+                </div>
+            </div>
+            <div class="dashboard-section w-25">
+                <div class="top-tip">
+                    <h2>Disperdícios no mês</h2>
+                    <span>11</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="dashboard-section w-50">
+                <h2>Próximos itens a vencer</h2>
+                <div style="height: 300px; overflow-y: auto; margin: 0 -30px"> 
+                    <table >
+                        <thead>
+                            <th>Item</th>
+                            <th>Lote</th>
+                            <th>Qtde.</th>
+                            <th>Dias restantes</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            <tr>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>10 dias</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>      
+            <div class="dashboard-section w-50">
+                <h2>Últimas adições ao sistema</h2>
+                <div style="height: 300px; overflow-y: auto; margin: 0 -30px"> 
+                    <table >
+                        <thead>
+                            <th>Item</th>
+                            <th>Lote</th>
+                            <th>Qtde.</th>
+                            <th>Preço</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>R$30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>R$30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>R$30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>R$30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>R$30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Rivotril</td>
+                                <td>abc1235</td>
+                                <td>06</td>
+                                <td>R$30,00</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div> 
+        </div>
+        <div class="row">
+            <div class="dashboard-section no-padding">
+                <div style="display: flex" >
+                    <div class="vendas-chart-container" >
+                        <line-chart id="vendas-chart"></line-chart>
+                    </div>
+                    <div class="vendas-chart-right" >
+                        <div class="vendas-tip">
+                            <h2>Vendas Totais</h2>
+                            <span>449</span>
+                        </div>
+                        <div class="vendas-tip">
+                            <h2>Entrada de itens</h2>
+                            <span>426</span>
+                        </div>
+                        <div class="vendas-tip">
+                            <h2>Remedios perdidos</h2>
+                            <span>33</span>
+                        </div>
+                        <div class="vendas-tip">
+                            <h2>Média no ano</h2>
+                            <span>33,2</span>
+                        </div>
+                        <div class="vendas-tip">
+                            <h2>Porcentagem de vendas</h2>
+                            <span>94%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </main>
 </body>
 </html>

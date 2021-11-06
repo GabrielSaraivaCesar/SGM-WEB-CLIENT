@@ -16,6 +16,11 @@
     --ui-grey-7: #F7F8FC;
 
     --ui-white: #FFFFFF;
+
+
+    --bp-lg: 1024px;
+    --bp-md: 768px;
+    --bp-sm: 320px;
 }
 
 * {
@@ -31,5 +36,35 @@ body {
 main {
     background-color: var(--ui-grey-7);
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+    padding: 30px;
+    overflow-y: auto;
+}
+.no-padding {
+    padding: 0 !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-y: auto;
+}
+thead {
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--ui-grey-5);
+}
+td, th {
+    padding: 8px;
+    text-align: center;
+    color: var(--ui-grey-3);
+    font-weight: 600;
 }

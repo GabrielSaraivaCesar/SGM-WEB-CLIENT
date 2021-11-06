@@ -194,7 +194,7 @@ class ChartComponent extends HTMLElement {
 
     /** @protected @returns {void} */
     _setListeners() {
-        // window.addEventListener("resize", () => this.draw());
+        window.addEventListener("resize", () => this.draw());
         this.canvas.addEventListener("mousemove", (event) => this._onMouseMove(event))
         this.canvas.addEventListener("mouseleave", (event) => this._onMouseLeave(event))
         this.canvas.addEventListener("click", (event) => this._onClick(event));
