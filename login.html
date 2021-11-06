@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGM</title>
+    <script src="/src/scripts/login.js" defer></script>
+
+    <link rel="stylesheet" href="/src/style/main.css">
+    <link rel="stylesheet" href="/src/style/login.css">
+</head>
+<body style="display: flex; justify-content: center; align-items:center; height: 100vh; padding: 0; margin: 0">
+    <main>
+        
+        <form class="login-container" id="login-form">
+            <h1>SGM</h1>
+            <h2>Faça login no SGM</h2>
+            <h3>Entre com seu email e senha</h3>
+            
+            <div class="text-input">
+                <label>
+                    EMAIL
+                    <input autocomplete="off" type="email" placeholder="" id="txt-email">
+                </label>
+            </div>
+            <div style="height: 24px"></div>
+            <div class="text-input">
+                <label>
+                    SENHA
+                    <input autocomplete="off" type="password" placeholder="" id="txt-senha" >
+                </label>
+            </div>
+            <div style="height: 24px"></div>
+            <button type="submit">Log In</button>
+            <div style="height: 32px"></div>
+            <span>Caso não tenha uma conta, contacte um administrador do sistema</span>
+        </form>
+
+    </main>
+</body>
+</html>
