@@ -94,6 +94,18 @@ td, th {
     font-size: 14px;
     color: var(--ui-grey-3);
 }
+.text-input label textarea {
+    margin-top: 6px;
+    height: 100px;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid var(--ui-grey-5);
+    outline: none;
+    padding: 0 16px;
+    font-size: 14px;
+    color: var(--ui-grey-3);
+    resize: none;
+}
 
 
 input[type=checkbox] {
@@ -122,11 +134,18 @@ button.danger {
     background-color: rgb(227 71 71);
     box-shadow:  0px 4px 12px rgba(227 71 71, 0.24)
 }
+button.secondary {
+    background-color: white;
+    box-shadow:  0px 4px 12px rgba(227 71 71, 0.24);
+   border: 1px solid var(--primary-blue-1);
+   color: var(--primary-blue-1);
+}
 button.danger:hover {
     background-color: rgb(185, 79, 79);
 }
 button:hover {
     background-color: var(--primary-blue-2);
+    color: white;
 }
 
 .card {
@@ -147,10 +166,46 @@ button:hover {
     margin-bottom: 24px;
 }
 
+.card h3 {
+    color: #595F82;
+        
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    margin-bottom: 16px;
+}
+
 .w-25 {
     max-width: calc(25% - 15px);
 }
+.w-33 {
+    max-width: calc(33% - 15px);
+}
 .w-50 {
     max-width: calc(50% - 15px);
+}
+
+@media (max-width: 1024px) {
+    .w-25 {
+        max-width: calc(50% - 15px);
+        margin-top: 20px;
+    }
+    .w-33 {
+        max-width: calc(50% - 15px);
+        margin-top: 20px;
+    }
+    .w-50 {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .w-25 {
+        max-width: 100%;
+    }
+    .w-33 {
+        max-width: 100%;
+    }
 }
 

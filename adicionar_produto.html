@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SGM</title>
+        
+        <script src="/src/components/navigation/navigation-component.js" defer></script>
+        <script src="/src/components/header/header-component.js" defer></script>
+         
+        <link rel="stylesheet" href="/src/style/main.css">
+    </head>
+
+    <body style="display: flex; justify-content: center; align-items:center; height: 100vh; padding: 0; margin: 0">
+        <navigation-component></navigation-component>
+        <main>
+            <header-component title="Produto"></header-component>
+
+            <div class="row">
+                <div class="card " >
+                    <h2>Adição de Novos Produtos</h2>
+                    
+                    <div class="row">
+                        <div class="text-input w-33"> 
+                            <label>
+                                NOME DO PRODUTO
+                                <input autocomplete="off" type="text" placeholder="" id="txt-nome">
+                            </label>
+                        </div>
+                        <div class="text-input w-33"> 
+                            <label>
+                                TIPO DE PRODUTO
+                                <input autocomplete="off" type="text" placeholder="" id="txt-tipo">
+                            </label>
+                        </div>
+                        <div class="text-input w-33"> 
+                            <label>
+                                PREÇO
+                                <input autocomplete="off" type="text" placeholder="" id="txt-preco">
+                            </label>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="text-input"> 
+                            <label>
+                                DESCRIÇÃO
+                                <textarea autocomplete="off" type="text" placeholder="" id="txt-descricao"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="row" style="justify-content: flex-end;" >
+                        <button style="width: 316px">
+                            ADICIONAR
+                        </button>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </main>
+
+    </body>
+</html>

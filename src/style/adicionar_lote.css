@@ -1,0 +1,11 @@
+.produto-item h3 {
+    width: 100%;
+}
+
+.produto-item h3 a{
+    float: right;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
