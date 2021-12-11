@@ -1,0 +1,79 @@
+<html> 
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SGM</title>
+        
+        <script type="module" src="/src/components/navigation/navigation-component.js" defer></script>
+        <script type="module" src="/src/components/header/header-component.js" defer></script>
+        <script type="module" src="/src/scripts/adicionar_lote.js" defer></script>
+        
+        <link rel="stylesheet" href="/src/style/main.css">
+        <link rel="stylesheet" href="/src/style/adicionar_lote.css">
+    </head>
+
+    <body style="display: flex; justify-content: center; align-items:center; height: 100vh; padding: 0; margin: 0">
+        <navigation-component></navigation-component>
+        <main>
+            <header-component title="Produtos"></header-component>
+
+            <div class="row">
+                <div class="card " >
+                    <h2>Adição de Lotes</h2>
+                    
+                    <div style="justify-content: flex-start;" class="row">
+                        <div class="text-input w-33"> 
+                            <label>
+                                DATA DE ENTRADA
+                                <input autocomplete="off" type="date" placeholder="" id="txt-data-de-entrada">
+                            </label>
+                        </div>
+
+                        <div style="width: 30px;">
+
+                        </div>
+                        
+                        <div class="text-input w-33"> 
+                            <label>
+                                ID DO LOTE
+                                <input autocomplete="off" type="text" placeholder="" id="txt-id-do-lote">
+                            </label>
+                        </div>
+                        
+                    </div>
+
+                    <h2>Entrada de Produtos</h2>
+
+                    <div id="lista-de-produtos"> 
+                        
+                    </div>
+                    
+
+                    <div class="row" style="justify-content: flex-end;" >
+                        <button class="secondary" style="width: 316px" onclick="adicionarProduto()">
+                            ADICIONAR PRODUTO
+                        </button>
+
+                        <div style="width: 30px;">
+
+                        </div>
+                        
+                        <button style="width: 316px">
+                            CONCLUIR
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </main>
+
+    </body>
+
+
+
+
+</html>    

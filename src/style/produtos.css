@@ -1,11 +1,45 @@
 
-.add-prod-btn {
+#add-btn .add-prod-btn {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 2;
+    height: 100%;
+}
+#add-btn {
+    position: relative;
 }
 
-#add-btn:hover {
+#add-btn .add-prod-btn-options {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    opacity: 0;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 8px;
+}
+#add-btn .add-prod-btn-options a {
+    color: white;
+    text-decoration: none;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
 
+#add-btn:hover .add-prod-btn-options{
+    top: 48px;
+    margin-top: 3px;
+    height: 100px;
+    opacity: 1;
+    background-color: var(--primary-blue-3);
 } 
