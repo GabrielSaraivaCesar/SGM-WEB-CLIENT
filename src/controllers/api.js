@@ -19,10 +19,16 @@ class Api {
             headers: this.headers,
         })
         .then(res => {
+            if (res.status >= 400) {
+                throw res.statusText;
+            }
             return res.json()
             .then(json => {
                 return json;
             })
+            .catch(err => {
+                return {};
+            });
         })
         .catch(err => {
             throw err;

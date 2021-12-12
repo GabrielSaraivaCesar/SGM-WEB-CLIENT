@@ -29,7 +29,7 @@ function buscarProdutos() {
                 <td>R$ ${produto.preco.toFixed(2).replace(".", ",")}</td>
                 <td>${produto.descricao}</td>
                 <td>
-                    <a href="#">Editar</a>
+                    <a href="/adicionar_produto.html?id=${produto.id}">Editar</a>
                 </td>
             </tr>`;
         });
@@ -91,7 +91,7 @@ function buscarLotes() {
                 <td>${new Date(lote.dtLote).toLocaleDateString()}</td>
                 <td>${lote.itemsEstoque.length}</td>
                 <td>
-                    <a href="#">Editar</a>
+                    <a href="/adicionar_lote.html?id=${lote.id}">Editar</a>
                 </td>
                 
             </tr>`;
@@ -111,7 +111,7 @@ function buscarLotes() {
     })
     .catch(err => {
         console.error(err)
-        alert("Erro ao buscar medicamentos");
+        alert("Erro ao buscar lotes");
     })
 }
 buscarLotes();

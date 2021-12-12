@@ -1,20 +1,24 @@
+import Api from '../controllers/api.js';
+
+const Id = document.getElementById("txt-id-do-lote");
+const DtLote = document.getElementById("txt-data-de-entrada");
+const IdLoja = parseInt(sessionStorage.getItem("loja"));
+
+
 const listaDeProdutos = document.getElementById("lista-de-produtos");
+
+const urlSearchParams = new URLSearchParams(window.location.search);
+const params = Object.fromEntries(urlSearchParams.entries());
+
+
 var produtosCounter = 0;
 
-const produtos = [
-    {
-        nome: "Produto 1",
-        id: 1
-    },
-    {
-        nome: "Produto 2",
-        id: 2
-    },
-    {
-        nome: "Produto 3",
-        id: 3
-    },
+var produtos = [
 ];
+
+function getItensEstoque() {
+    console.log(listaDeProdutos.children)
+}
 
 function adicionarProduto(){
     var template=`
@@ -80,4 +84,18 @@ function excluirProduto(row) {
     listaDeProdutos.removeChild(row);
 }
 
-adicionarProduto();
+
+function buscarProdutos() {
+    Api.request("medicamento", "GET")
+    .then(response => {
+        produtos = response;
+        adicionarProduto();
+        getItensEstoque();
+    })
+    .catch(err => {
+        console.error(err);
+        alert('Erro ao buscar medicamentos');
+    })
+}
+
+buscarProdutos();

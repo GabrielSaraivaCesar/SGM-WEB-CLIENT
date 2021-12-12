@@ -7,6 +7,7 @@
         
         <script type="module" src="/src/components/navigation/navigation-component.js" defer></script>
         <script type="module" src="/src/components/header/header-component.js" defer></script>
+        <script type="module" src="/src/scripts/adicionar_medicamento.js" defer></script>
          
         <link rel="stylesheet" href="/src/style/main.css">
     </head>
@@ -17,26 +18,28 @@
             <header-component title="Produto"></header-component>
 
             <div class="row">
-                <div class="card " >
+                <form class="card " id="form">
                     <h2>Adição de Novos Produtos</h2>
                     
                     <div class="row">
+                        <div class="text-input w-33"> 
+                            <label>
+                                SKU
+                                <input autocomplete="off" type="text" placeholder="" id="txt-sku">
+                            </label>
+                        </div>
+
                         <div class="text-input w-33"> 
                             <label>
                                 NOME DO PRODUTO
                                 <input autocomplete="off" type="text" placeholder="" id="txt-nome">
                             </label>
                         </div>
-                        <div class="text-input w-33"> 
-                            <label>
-                                TIPO DE PRODUTO
-                                <input autocomplete="off" type="text" placeholder="" id="txt-tipo">
-                            </label>
-                        </div>
+                        
                         <div class="text-input w-33"> 
                             <label>
                                 PREÇO
-                                <input autocomplete="off" type="text" placeholder="" id="txt-preco">
+                                <input type="number" step=".01" autocomplete="off" type="text" placeholder="" id="txt-preco">
                             </label>
                         </div>
 
@@ -53,14 +56,14 @@
                     </div>
                     
                     <div class="row" style="justify-content: flex-end;" >
-                        <button style="width: 316px">
+                        <button type="submit" style="width: 316px" id="submit-btn">
                             ADICIONAR
                         </button>
 
                     </div>
 
 
-                </div>
+                </form>
             </div>
 
         </main>
